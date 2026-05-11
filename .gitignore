@@ -1,0 +1,61 @@
+# GROMACS trajectory files (too large for GitHub)
+*.xtc
+*.trr
+*.tpr
+*.edr
+*.cpt
+*.gro
+*.pdb
+*.top
+*.itp
+
+# GROMACS output files
+*.log
+*.xvg
+mdout.mdp
+*.ndx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data files
+data/raw/*
+!data/raw/README.md
+results/outputs/*.xtc
+results/outputs/*.trr
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# Output files (optional - uncomment to exclude)
+# *.pdf
+# *.png
+# *.tiff
+# *.xlsx
