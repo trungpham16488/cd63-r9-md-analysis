@@ -1,0 +1,188 @@
+CODE AVAILABILITY SECTION FOR NATURE COMMUNICATIONS
+================================================================================
+
+CODE AVAILABILITY (for manuscript)
+
+Molecular dynamics simulations were performed using GROMACS 2023.4 (https://www.gromacs.org/). System preparation utilized CHARMM-GUI (https://www.charmm-gui.org/). Analysis and visualization scripts are available in the Supplementary Information and at [GitHub repository URL or Zenodo DOI - to be added upon submission].
+
+================================================================================
+DETAILED SOFTWARE VERSIONS (for Methods)
+================================================================================
+
+Primary software:
+- GROMACS version: 2023.4
+- Force field: CHARMM36m
+- Water model: TIP3P
+- Analysis tools: GROMACS built-in utilities (gmx rms, gmx rmsf, gmx gyrate, gmx hbond)
+
+Python analysis:
+- Python: 3.x
+- NumPy: for data processing
+- Pandas: for data organization and Excel export
+- Matplotlib: for figure generation
+- openpyxl: for Excel file creation
+
+Visualization:
+- PyMOL: for molecular structure visualization
+- VMD (optional): for trajectory visualization
+
+================================================================================
+GROMACS COMMANDS USED (for Supplementary Methods)
+================================================================================
+
+System preparation (CHARMM-GUI):
+1. Protein structure preparation (CD63/CD9 with R9 conjugated via EDC/NHS)
+2. Solvation in TIP3P water box (1.2 nm minimum distance)
+3. Ion addition (0.15 M NaCl for neutralization and physiological conditions)
+
+Energy minimization:
+gmx grompp -f em.mdp -c system.gro -p topol.top -o em.tpr
+gmx mdrun -v -deffnm em
+
+NVT equilibration (300 K):
+gmx grompp -f nvt.mdp -c em.gro -r em.gro -p topol.top -o nvt.tpr
+gmx mdrun -v -deffnm nvt
+
+NPT equilibration (1 bar):
+gmx grompp -f npt.mdp -c nvt.gro -r nvt.gro -p topol.top -o npt.tpr
+gmx mdrun -v -deffnm npt
+
+Production MD:
+gmx grompp -f production.mdp -c npt.gro -p topol.top -o production.tpr
+gmx mdrun -v -deffnm production
+
+Trajectory processing:
+# Remove periodic boundary artifacts
+gmx trjconv -s production.tpr -f production.xtc -o production_noPBC.xtc -pbc mol -ur compact
+
+# Extract production trajectory (1.38-4.5 ns)
+gmx trjconv -s production.tpr -f production_noPBC.xtc -o production_1380to4500ps.xtc -b 1380 -e 4500
+
+Analysis commands:
+# Backbone RMSD
+gmx rms -s production.tpr -f production_1380to4500ps.xtc -n index.ndx -o rmsd_backbone.xvg -tu ns
+# Selected groups: Backbone (for fit and analysis)
+
+# Per-residue RMSF
+gmx rmsf -s production.tpr -f production_1380to4500ps.xtc -n index.ndx -o rmsf_residue.xvg -res
+# Selected group: Protein_noR9
+
+# R9 radius of gyration
+gmx gyrate -s production.tpr -f production_1380to4500ps.xtc -n index.ndx -o gyrate_r9.xvg
+# Selected group: R9_peptide
+
+# Hydrogen bonds
+gmx hbond -s production.tpr -f production_1380to4500ps.xtc -n index.ndx -num hbond.xvg
+# Selected groups: Protein_noR9 and R9_peptide
+# Default criteria: distance cutoff 0.35 nm, angle cutoff 30°
+
+================================================================================
+CUSTOM INDEX GROUPS (index.ndx file content)
+================================================================================
+
+[ R9_peptide ]
+# Atoms corresponding to R9 peptide (residues ~248-256)
+# Generated using: gmx make_ndx -f system.gro
+
+[ Protein_noR9 ]
+# Protein atoms excluding R9 peptide (residues 1-247)
+# Generated using: gmx make_ndx -f system.gro
+
+================================================================================
+MDP PARAMETER FILES (key settings)
+================================================================================
+
+production.mdp (key parameters):
+-----------------------------------
+integrator              = md
+dt                      = 0.002      ; 2 fs timestep
+nsteps                  = 2500000    ; 5 ns total
+nstxout-compressed      = 500        ; save every 1 ps
+temperature             = 300        ; K
+tcoupl                  = V-rescale
+tau_t                   = 0.1
+pressure                = 1.0        ; bar
+pcoupl                  = Parrinello-Rahman
+tau_p                   = 2.0
+constraints             = h-bonds
+coulombtype             = PME
+rcoulomb                = 1.2
+rvdw                    = 1.2
+pbc                     = xyz
+
+================================================================================
+DATA AVAILABILITY (for manuscript)
+================================================================================
+
+DATA AVAILABILITY
+
+Source data for Figure 1 are provided as Supplementary Table 1. Molecular dynamics trajectory files are available from the corresponding author upon reasonable request due to large file size (>10 GB). Initial system coordinates and topology files are provided as Supplementary Data 1.
+
+================================================================================
+RECOMMENDED FILE ORGANIZATION FOR SUPPLEMENTARY MATERIALS
+================================================================================
+
+Supplementary_Code_1.zip should contain:
+├── README.txt (explains all files)
+├── analysis_scripts/
+│   ├── NATURE_FINAL_3panels.py (main figure generation)
+│   ├── plot_supplementary_RMSD_RMSF.py (supplementary figure)
+│   └── requirements.txt (Python dependencies)
+├── gromacs_commands/
+│   ├── run_simulation.sh (complete workflow script)
+│   ├── production.mdp (MD parameters)
+│   ├── index.ndx (custom index groups)
+│   └── analysis_commands.sh (all analysis commands)
+└── starting_structures/
+    ├── cd63_r9_system.pdb (initial structure)
+    └── cd9_r9_system.pdb (initial structure)
+
+Supplementary_Table_1.xlsx:
+- All source data from figures (already created as Source_Data_FINAL.xlsx)
+
+================================================================================
+README.txt CONTENT (for Supplementary Code)
+================================================================================
+
+MD SIMULATION AND ANALYSIS CODE
+Nature Communications submission: "CD63 provides superior binding interface for R9-engineered exosomes"
+
+CONTENTS:
+1. analysis_scripts/ - Python scripts for figure generation
+2. gromacs_commands/ - Complete GROMACS workflow and analysis
+3. starting_structures/ - Initial system coordinates
+
+REQUIREMENTS:
+- GROMACS 2023.4 or later (https://www.gromacs.org/)
+- Python 3.x with NumPy, Pandas, Matplotlib, openpyxl
+
+USAGE:
+1. Review gromacs_commands/run_simulation.sh for complete MD workflow
+2. Use analysis_commands.sh for trajectory analysis
+3. Run Python scripts in analysis_scripts/ to generate figures
+
+SIMULATION DETAILS:
+- Force field: CHARMM36m
+- Water model: TIP3P
+- Salt concentration: 0.15 M NaCl
+- Temperature: 300 K
+- Pressure: 1 bar
+- Equilibration: 1.38 ns (NVT + NPT)
+- Production: 3.12 ns (1.38-4.5 ns total)
+
+ANALYSIS:
+- RMSD: Backbone alignment and calculation
+- RMSF: Per-residue flexibility
+- Gyration: R9 peptide compactness
+- H-bonds: Protein-R9 interactions (distance < 0.35 nm, angle < 30°)
+
+CONTACT:
+[Your name and email]
+
+CITATION:
+[Your paper citation once published]
+
+LICENSE:
+MIT License (or CC-BY as appropriate)
+
+================================================================================
