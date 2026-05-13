@@ -135,7 +135,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 BioMEMS & Bio-impedance Lab  
 Department of Biomedical Engineering  
 Gachon University, South Korea  
-Email: [your.email@example.com]
+Email: trungpham16488@gmail.com
 
 ## Acknowledgments
 
