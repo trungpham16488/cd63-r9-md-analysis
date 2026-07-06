@@ -81,7 +81,7 @@ See `COMPLETE_FIGURE_GUIDE.txt` for the mapping of each output to its manuscript
 
 The trajectory outputs, analysis scripts, and figure source data are archived on Zenodo:
 
-**https://doi.org/10.5281/zenodo.XXXXXXX**  *[insert the Zenodo DOI for THIS repository]*
+**https://doi.org/10.5281/zenodo.20123048**  *[insert the Zenodo DOI for THIS repository]*
 
 ---
 
@@ -93,7 +93,7 @@ Please cite both the paper and the software archive:
 > Pham D.-T., *et al.* Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration. *Advanced Functional Materials*, 2026. DOI: *[to be added]*
 
 **Software / data**
-> Pham D.-T. MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering. Zenodo, 2026. https://doi.org/10.5281/zenodo.XXXXXXX
+> Pham D.-T. MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering. Zenodo, 2026. https://doi.org/10.5281/zenodo.20123048
 
 ---
 
@@ -103,5 +103,5 @@ Released under the MIT License — see [`LICENSE`](LICENSE).
 
 ## Contact
 
-Duc-Trung Pham — *[email]*
+Duc-Trung Pham — *[email: trungpham16488@gmail.com]*
 BioMEMS & Bio-impedance Laboratory, Gachon University
