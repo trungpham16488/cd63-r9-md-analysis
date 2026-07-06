@@ -114,7 +114,7 @@ DATA AVAILABILITY (for manuscript)
 
 DATA AVAILABILITY
 
-Source data for Figure 1 are provided as Supplementary Table 1. Molecular dynamics trajectory files are available from the corresponding author upon reasonable request due to large file size (>10 GB). Initial system coordinates and topology files are provided as Supplementary Data 1.
+Source data for Figure 1 are provided as Supplementary Table 1. Molecular dynamics trajectory files are openly available
 
 ================================================================================
 RECOMMENDED FILE ORGANIZATION FOR SUPPLEMENTARY MATERIALS
@@ -123,7 +123,7 @@ RECOMMENDED FILE ORGANIZATION FOR SUPPLEMENTARY MATERIALS
 Supplementary_Code_1.zip should contain:
 ├── README.txt (explains all files)
 ├── analysis_scripts/
-│   ├── NATURE_FINAL_3panels.py (main figure generation)
+│   ├── figure_main_3panels.py (main figure generation)
 │   ├── plot_supplementary_RMSD_RMSF.py (supplementary figure)
 │   └── requirements.txt (Python dependencies)
 ├── gromacs_commands/
@@ -175,7 +175,8 @@ ANALYSIS:
 - H-bonds: Protein-R9 interactions (distance < 0.35 nm, angle < 30°)
 
 CONTACT:
-[Your name and email]
+DUC-TRUNG PHAM
+Email: trungpham16488@gmail.com
 
 CITATION:
 [Your paper citation once published]
