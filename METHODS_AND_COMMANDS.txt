@@ -143,7 +143,7 @@ README.txt CONTENT (for Supplementary Code)
 ================================================================================
 
 MD SIMULATION AND ANALYSIS CODE
-Nature Communications submission: "CD63 provides superior binding interface for R9-engineered exosomes"
+Advanced Functional Materials submission: "Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration"
 
 CONTENTS:
 1. analysis_scripts/ - Python scripts for figure generation
