@@ -27,7 +27,11 @@ Molecular dynamics simulation analysis demonstrating that the CD63 tetraspanin p
 | Analysis / plotting | Python (`numpy`, `pandas`, `matplotlib`); PyMOL |
 
 **Systems compared:** CD63–R9 vs. CD9–R9
-*[Fill in: production length, system size (atoms), replicate scheme, and headline binding-energy values for each system.]*
+*  • CD63–R9: 3.12 ns production (1.38–4.5 ns), 50,683 atoms, CHARMM36m
+    Radius of gyration: 1.34 ± 0.17 nm | H-bonds: 2.46 ± 0.89
+  
+  • CD9–R9: 3.12 ns production (1.38–4.5 ns), 50,683 atoms, CHARMM36m
+    Radius of gyration: 4.98 ± 0.25 nm | H-bonds: 0.01 ± 0.10*
 
 ---
 
@@ -81,7 +85,7 @@ See `COMPLETE_FIGURE_GUIDE.txt` for the mapping of each output to its manuscript
 
 The trajectory outputs, analysis scripts, and figure source data are archived on Zenodo:
 
-**https://doi.org/10.5281/zenodo.20123048**  *[insert the Zenodo DOI for THIS repository]*
+**https://doi.org/10.5281/zenodo.20123048**
 
 ---
 
