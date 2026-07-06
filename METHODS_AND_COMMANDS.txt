@@ -1,7 +1,7 @@
 SIMULATION METHODS AND COMMANDS
 ================================================================================
 
-Molecular dynamics simulations were performed using GROMACS 2023.4 (https://www.gromacs.org/). System preparation utilized CHARMM-GUI (https://www.charmm-gui.org/). Analysis and visualization scripts are available in the Supplementary Information and at [GitHub repository URL or Zenodo DOI - to be added upon submission].
+Molecular dynamics simulations were performed using GROMACS 2023.4 (https://www.gromacs.org/). System preparation utilized CHARMM-GUI (https://www.charmm-gui.org/). Analysis and visualization scripts are available in the Supplementary Information and at [GitHub repository URL  https://github.com/trungpham16488/cd63-r9-md-analysis or Zenodo doi.org/10.5281/zenodo.20123048 to be added upon submission].
 
 ================================================================================
 DETAILED SOFTWARE VERSIONS (for Methods)
