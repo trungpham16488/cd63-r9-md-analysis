@@ -1,5 +1,5 @@
 """
-PYMOL SCRIPT FOR FIGURE 2 PANELS C AND D
+PYMOL SCRIPT FOR FIGURE 1 PANELS C AND D
 ================================================================================
 Energy-minimized structures showing EDC/NHS covalent attachment
 Panel c: CD63-R9 conjugate (LYS156, bond length 1.45 Å)
