@@ -1,7 +1,5 @@
-CODE AVAILABILITY SECTION FOR NATURE COMMUNICATIONS
+METHODS_AND_COMMANDS.txt
 ================================================================================
-
-CODE AVAILABILITY (for manuscript)
 
 Molecular dynamics simulations were performed using GROMACS 2023.4 (https://www.gromacs.org/). System preparation utilized CHARMM-GUI (https://www.charmm-gui.org/). Analysis and visualization scripts are available in the Supplementary Information and at [GitHub repository URL or Zenodo DOI - to be added upon submission].
 
