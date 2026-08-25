@@ -2,7 +2,7 @@
 """
 COMPLETE FIGURE GENERATION FOR Advanced Functional Materials SUBMISSION
 ================================================================================
-Figure 2: Main figure with MD simulation results
+Figure 1: Main figure with MD simulation results
 - Panel c: CD63-R9 structure (PyMOL - see separate script)
 - Panel d: CD9-R9 structure (PyMOL - see separate script)
 - Panel e: R9 gyration time series
