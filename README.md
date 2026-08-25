@@ -30,7 +30,7 @@ Molecular dynamics simulation analysis demonstrating that the CD63 tetraspanin p
 *  • CD63–R9: 3.12 ns production (1.38–4.5 ns), 50,683 atoms, CHARMM36m
     Radius of gyration: 1.34 ± 0.17 nm | H-bonds: 2.46 ± 0.89
   • CD9–R9: 3.12 ns production (1.38–4.5 ns), 50,683 atoms, CHARMM36m
-    Radius of gyration: 4.98 ± 0.25 nm | H-bonds: 0.01 ± 0.10*
+    Radius of gyration: 0.61 ± 0.02 nm | H-bonds: 0.01 ± 0.10*
 
 ---
 
