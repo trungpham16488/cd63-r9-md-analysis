@@ -9,7 +9,7 @@ This repository supports the manuscript:
 
 > **Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration**
 > Duc-Trung Pham, *et al.*
-> *Advanced Functional Materials* (2026), under review. DOI: *[to be added on acceptance]*
+> *ACS Nano* (2026), under review. DOI: *[to be added on acceptance]*
 
 ---
 
