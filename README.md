@@ -93,7 +93,7 @@ The trajectory outputs, analysis scripts, and figure source data are archived on
 Please cite both the paper and the software archive:
 
 **Paper**
-> Pham D.-T., *et al.* Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration. *Advanced Functional Materials*, 2026. DOI: *[to be added]*
+> Pham D.-T., *et al.* Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration. *ACS Nano*, 2026. DOI: *[to be added]*
 
 **Software / data**
 > Pham D.-T. MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering. Zenodo, 2026. https://doi.org/10.5281/zenodo.20123048
