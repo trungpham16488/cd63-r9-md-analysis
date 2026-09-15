@@ -1,6 +1,6 @@
 # MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20123048-blue)](https://doi.org/10.5281/zenodo.20123048)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20123048-blue)] [(https://doi.org/10.5281/zenodo.22770619)]
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Molecular dynamics simulation analysis comparing the **CD63** and **CD9** tetraspanins as display scaffolds for the **R9 cell-penetrating peptide** in engineered exosome nanocarriers.
