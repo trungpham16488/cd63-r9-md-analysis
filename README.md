@@ -7,7 +7,7 @@ Molecular dynamics simulation analysis comparing the **CD63** and **CD9** tetras
 
 This repository supports the manuscript:
 
-> **Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration**
+> **Computationally Engineered R9-Exosome Nanocarriers and Label-Free Impedimetric Monitoring for Theranostic 3D Epidermal Regeneration**
 > Duc-Trung Pham, *et al.*
 > DOI: *[to be added on acceptance]*
 
@@ -93,7 +93,7 @@ The trajectory outputs, analysis scripts, and figure source data are archived on
 Please cite both the paper and the software archive:
 
 **Paper**
-> Pham D.-T., *et al.* Computationally Engineered Peptide-Exosome Nanocarriers for Continuous Bioelectronic Monitoring of 3D Epidermal Regeneration. *ACS Nano*, 2026. DOI: *[to be added]*
+> Pham D.-T., *et al.* Computationally Engineered R9-Exosome Nanocarriers and Label-Free Impedimetric Monitoring for Theranostic 3D Epidermal Regeneration, 2026. DOI: *[to be added]*
 
 **Software / data**
 > Pham D.-T. MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering. Zenodo, 2026. https://doi.org/10.5281/zenodo.20123048
