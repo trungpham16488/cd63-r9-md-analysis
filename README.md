@@ -96,7 +96,7 @@ Please cite both the paper and the software archive:
 > Pham D.-T., *et al.* Computationally Engineered R9-Exosome Nanocarriers and Label-Free Impedimetric Monitoring for Theranostic 3D Epidermal Regeneration, 2026. DOI: *[to be added]*
 
 **Software / data**
-> Pham D.-T. MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering. Zenodo, 2026. https://doi.org/10.5281/zenodo.20123048
+> Pham D.-T. MD Simulation Analysis: CD63 vs CD9 for R9-Exosome Engineering. Zenodo, 2026. https://doi.org/10.5281/zenodo.20123048](https://doi.org/10.5281/zenodo.22770619
 
 ---
 
