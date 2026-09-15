@@ -2,7 +2,6 @@
 ################################################################################
 # GROMACS ANALYSIS COMMANDS
 # MD simulation analysis for CD63-R9 vs CD9-R9 comparison
-# Nature Communications submission
 ################################################################################
 
 echo "MD Simulation Analysis Workflow"
