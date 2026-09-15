@@ -9,7 +9,7 @@ This repository supports the manuscript:
 
 > **Computationally Engineered R9-Exosome Nanocarriers and Label-Free Impedimetric Monitoring for Theranostic 3D Epidermal Regeneration**
 > Duc-Trung Pham, *et al.*
-> DOI: *[to be added on acceptance]*
+> DOI: *(https://doi.org/10.5281/zenodo.22770619)*
 
 ---
 
@@ -84,7 +84,7 @@ See `COMPLETE_FIGURE_GUIDE.txt` for the mapping of each output to its manuscript
 
 The trajectory outputs, analysis scripts, and figure source data are archived on Zenodo:
 
-**https://doi.org/10.5281/zenodo.20123048**
+**https://doi.org/10.5281/zenodo.22770619**
 
 ---
 
